@@ -14,7 +14,6 @@ data "aws_iam_policy_document" "cmk" {
 
 resource "aws_kms_key" "key" {
   policy = data.aws_iam_policy_document.cmk.json
-}
 
 resource "aws_kms_alias" "key_alias" {
   name          = "alias/kms-key"

@@ -13,9 +13,8 @@ provider "aws" {
 
   module "s3_bucket" {
   source = "./modules/S3"
-
+  kms_master_key_id = module.kms.kms_arn
 }
-
 
   module "kms" {
   source = "./modules/kms"

@@ -1,3 +1,3 @@
-output "kms_arn" {
-  value = module.kms.kms_arn
-}
+#output "kms_arn" {
+#  value = module.kms.kms_arn
+#}
